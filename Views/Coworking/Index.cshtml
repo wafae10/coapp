@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Find coworking spaces near you";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Horizontal Cards</title>
+    <style>
+        /* .container{
+            max-width:max-content;
+        } */
+
+        .body {
+            background-color: #000000;
+            margin: 0px;
+            padding: 0px;
+        }
+        .headPage {
+            background-color:#0E2442;
+            padding-bottom: 20px;
+            color:white;
+        }
+            .headPage img{
+                margin-left: 30px;
+            }
+
+        .titleMiddle{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .card-horizontal {
+        display: flex;
+        flex-direction: row;
+        }
+
+            .card-horizontal img {
+                width: 150px;
+                height: auto;
+                object-fit: cover; /* Ensure the image covers the area without stretching */
+            }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding-top:20px;
+        }
+
+        .col-md-12 {
+            flex: 1;
+            margin: 0 10px; /* Adjust spacing between cards */
+        }
+
+            .col-md-12:first-child {
+                margin-left: 0;
+            }
+
+            .col-md-12:last-child {
+                margin-right: 0;
+            }
+    </style>
+</head>
+
+<body>
+    @* <div class="container mt-5"> *@
+
+        <div class="headPage">
+            <img src="~/images/omer.png" alt="Logo" class="mb-3" style="width: 100px;">
+            <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+            <!-- Search Bar -->
+            <div class="row mb-4 justify-content-center">
+                <div class="col-md-8">
+                    <form class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for coworking spaces..." aria-label="Search for coworking spaces" aria-describedby="button-search">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="button-search">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <div class="titleMiddle">
+        <h3> Popular coworking spaces in your town</h3>
+    </div>
+	
+        <div class="row">
+        
+            <div class="col-md-12 mb-4">
+                <div class="card shadow-sm card-horizontal">
+                    <img src="~/images/coworking1.jpg" class="img-fluid" alt="Coworking Space 1">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <h5 class="card-title">Spot 1</h5>
+                        <p class="card-text">Address: 123 Main St, City</p>
+                        <p class="card-text">Rating: ★★★★☆</p>
+                        <a href="#" class="btn btn-primary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card shadow-sm card-horizontal">
+                    <img src="~/images/coworking2.jpg" class="img-fluid" alt="Coworking Space 2">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <h5 class="card-title">Spot 2</h5>
+                        <p class="card-text">Address: 456 Market St, City</p>
+                        <p class="card-text">Rating: ★★★★☆</p>
+                        <a href="#" class="btn btn-primary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-4">
+                <div class="card shadow-sm card-horizontal">
+                    <img src="~/images/coworking3.jpg" class="img-fluid" alt="Coworking Space 3">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <h5 class="card-title">Spot 3</h5>
+                        <p class="card-text">Address: 789 Broadway, City</p>
+                        <p class="card-text">Rating: ★★★★☆</p>
+                        <a href="#" class="btn btn-primary mt-2">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @* </div> *@
+</body>
+
+
+
+
+

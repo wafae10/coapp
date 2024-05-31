@@ -1,0 +1,357 @@
+﻿@* @{
+    ViewData["Title"] = "Coworking space";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Coworking space</title>
+    <style>
+        body, html {
+            height: 100%;
+            width:max-content;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div1 {
+            height:120px;
+            width: max-content;
+            padding-top:20px;
+            padding-bottom:20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .div1 img{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .div2 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .div3 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh; /* Full height of the viewport */
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+
+        .card {
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+            .card-header .nav-tabs {
+                border: none;
+            }
+
+            .card-header .nav-link {
+                border: none;
+                border-bottom: 2px solid transparent;
+                font-weight: bold;
+            }
+
+                .card-header .nav-link.active {
+                    border-bottom: 2px solid black;
+                }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .price {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #000;
+            border-color: #000;
+            border-radius: 5px;
+        }
+
+            .btn-primary:hover {
+                background-color: #333;
+                border-color: #333;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img src="~/images/logo.png" alt="Logo" class="mb-3" style="width: 100px;">
+    </div>
+    <div class="div2">
+        <h3>Spark spot</h3>
+    </div>
+    <div class="div3">
+        <div class="div31">
+            <img src="~/images/coworking1.jpg" alt="Logo" class="mb-3" style="width:200px;height:200px;">
+        </div>
+        
+
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Basic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Standard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Premium</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-between">
+                        <span>Basic fee</span>
+                        <span class="price">Price: 20$/h</span>
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li>• Hot Desks: Flexible seating options on a first-come, first-served basis.</li>
+                        <li>• Dedicated Desks: Reserved desks for individuals who prefer a consistent spot.</li>
+                        <li>• Private Offices: Enclosed offices for teams or individuals needing more privacy.</li>
+                        <li>• Meeting Rooms: Bookable spaces for meetings, conferences, or presentations.</li>
+                    </ul>
+                    <button type="button" class="btn btn-primary btn-block w-100 mt-3">Book your spot</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="div32">
+        </div>
+    </div>
+    <div class="div4">
+        <h3>Reviews</h3>
+    </div>
+    <div class="div5">
+    </div>
+
+
+</body>
+ *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace Pricing and Reviews</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+            .header img {
+                height: 50px;
+            }
+
+            .header h1 {
+                margin: 0;
+                font-size: 24px;
+                margin-left: 10px;
+            }
+
+        .rating {
+            color: gold;
+            font-size: 24px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .main-content img {
+                max-width: 60%;
+                border-radius: 10px;
+            }
+
+        .card {
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+            .card-header .nav-tabs {
+                border: none;
+            }
+
+            .card-header .nav-link {
+                border: none;
+                border-bottom: 2px solid transparent;
+                font-weight: bold;
+            }
+
+                .card-header .nav-link.active {
+                    border-bottom: 2px solid black;
+                }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .price {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #000;
+            border-color: #000;
+            border-radius: 5px;
+        }
+
+            .btn-primary:hover {
+                background-color: #333;
+                border-color: #333;
+            }
+
+        .reviews {
+            padding: 20px;
+            background-color: #ffecec;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .review-card {
+            background-color: #f2e1ff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="~/images/logo.png" alt="Logo">
+        <h1>FlexDesk</h1>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <div>
+                <h2>Spark spot <span class="rating">★★★★★</span></h2>
+                <img src="~/images/coworking1.jpg" alt="Coworking Space Image">
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Basic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Standard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Premium</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-between">
+                        <span>Basic fee</span>
+                        <span class="price">Price: 20$/h</span>
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li>• Hot Desks: Flexible seating options on a first-come, first-served basis.</li>
+                        <li>• Dedicated Desks: Reserved desks for individuals who prefer a consistent spot.</li>
+                        <li>• Private Offices: Enclosed offices for teams or individuals needing more privacy.</li>
+                        <li>• Meeting Rooms: Bookable spaces for meetings, conferences, or presentations.</li>
+                    </ul>
+                    <button type="button" class="btn btn-primary btn-block w-100 mt-3">Book your spot</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h2>Reviews</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="review-card">
+                        <p>★★★★★</p>
+                        <p>"Fantastic coworking space! The high-speed internet is reliable, and the variety of seating options helps keep my workday flexible and productive. The community events are a great bonus for networking."</p>
+                        <p>★★★★★</p>
+                        <p>Having access to private meeting rooms has been a game-changer for my client meetings.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="review-card">
+                        <p>★★★★★</p>
+                        <p>"Having access to private meeting rooms has been a game-changer for my client meetings. The space is always clean and the ergonomic furniture makes long hours more bearable."</p>
+                        <p>★★★★★</p>
+                        <p>"I appreciate the 24/7 access as it fits perfectly with my unpredictable schedule."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
